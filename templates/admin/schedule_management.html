@@ -62,10 +62,9 @@
                                                         {% elif schedule.ca_lam == 'chieu' %}bg-info text-dark
                                                         {% else %}bg-danger text-white{% endif %}">
                                                         <span class="schedule-short">
-                                                            {% if schedule.ca_lam == 'sang' %}Sáng: 7h00-12h00
-                                                            {% elif schedule.ca_lam == 'chieu' %}Chiều: 12h00-17h00
-                                                            {% elif schedule.ca_lam == 'toi' %}Tối: 17h00-22h00
-                                                            {% else %}Khuya: 22h-7h00{% endif %}
+                                                            {% if schedule.ca_lam == 'sang' %}Sáng: 7h00-15h00
+                                                            {% elif schedule.ca_lam == 'chieu' %}Chiều: 15h00-23h00
+                                                            {% else %}Tối: 23h00-7h00{% endif %}
                                                         </span>
                                                         <a href="{% url 'delete_schedule' schedule.ma_lich %}" class="text-danger ms-1">
                                                             <i class="fas fa-times"></i>
@@ -101,10 +100,9 @@
                                                     {% elif schedule.ca_lam == 'chieu' %}bg-info text-dark
                                                     {% else %}bg-danger text-white{% endif %}">
                                                     <span class="schedule-short">
-                                                        {% if schedule.ca_lam == 'sang' %}Sáng: 7h00-12h00
-                                                        {% elif schedule.ca_lam == 'chieu' %}Chiều: 12h00-17h00
-                                                        {% elif schedule.ca_lam == 'toi' %}Tối: 17h00-22h00
-                                                        {% else %}Khuya: 22h-7h00{% endif %}
+                                                        {% if schedule.ca_lam == 'sang' %}Sáng: 7h00-15h00
+                                                        {% elif schedule.ca_lam == 'chieu' %}Chiều: 15h00-23h00
+                                                        {% else %}Tối: 23h-7h00{% endif %}
                                                     </span>
                                                     <span class="text-danger ms-1 disabled-link">
                                                         <i class="fas fa-times"></i>
